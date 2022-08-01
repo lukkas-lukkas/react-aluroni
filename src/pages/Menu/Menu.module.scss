@@ -1,6 +1,24 @@
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+@import "styles/var";
+@import "styles/breakpoints";
+
+.container {
+    padding: 50px 250px;
+    width: 100%;
+
+    @media (max-width: $desktop_xsm) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 }
 
 .header {
@@ -15,6 +33,13 @@
         color: white;
         font-size: 5rem;
         min-width: 400px;
-        width: 80%;
+    }
+}
+
+.menu {
+    &__titulo {
+        color: $dark;
+        font-size: 3rem;
+        margin-bottom: 30px;
     }
 }

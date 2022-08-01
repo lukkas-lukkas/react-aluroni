@@ -8,17 +8,17 @@ export default function Menu() {
 
     return (
         <main>
-            <nav className={`${style.nav} container`}>
+            <nav className={style.container}>
                 <Logo />
             </nav>
             <header className={style.header}>
-                <div className={`${style.header__text} container`}>
+                <div className={`${style.header__text} ${style.container}`}>
                     Great code and spaghetti
                 </div>
             </header>
-            <section className={style.menu}>
+            <section className={`${style.menu} ${style.container}`}>
                 <h3 className={style.menu__title}>Menu</h3>
-                <Search search={search} setSearch={setSearch} />
+                <Search search={search} setSearch={setSearch} />    
             </section>
         </main>
     );
