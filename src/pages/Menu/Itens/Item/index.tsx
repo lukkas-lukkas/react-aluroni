@@ -1,4 +1,4 @@
-import logo from 'assets/logo.svg';
+import React from 'react';
 import style from './Item.module.scss';
 import itens from '../itens.json';
 

@@ -1,7 +1,7 @@
 import style from './OrderBy.module.scss';
 import options from './options.json';
-import { useState } from 'react';
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
+import React, { useState } from 'react';
 
 interface Props {
     orderBy: string,
