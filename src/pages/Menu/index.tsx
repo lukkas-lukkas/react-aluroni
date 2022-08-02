@@ -15,7 +15,7 @@ export default function Menu() {
 
     return (
         <main>
-            <nav className={style.container}>
+            <nav className={`${style.container} ${style.nav}`}>
                 <Logo />
             </nav>
             <header className={style.header}>
