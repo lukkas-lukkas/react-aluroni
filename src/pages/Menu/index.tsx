@@ -4,6 +4,7 @@ import style from "./Menu.module.scss";
 import Search from "./Search";
 import Filters from "./Filters";
 import OrderBy from "./OrderBy";
+import Itens from "./Itens";
 
 export default function Menu() {
     const [search, setSearch] = useState("");
@@ -29,6 +30,7 @@ export default function Menu() {
                     <Filters activeFilter={filter} setFilter={setFilter}/>
                     <OrderBy orderBy={orderby} setOrderBy={setOrderBy}/>
                 </div>
+                <Itens />
             </section>
         </main>
     );
