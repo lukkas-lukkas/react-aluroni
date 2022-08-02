@@ -22,10 +22,23 @@ export default function Itens({ search, filter, orderBy }: Props) {
         return true;
     }
 
+    function order(newList: typeof itens) {
+        switch(orderBy) {
+          case 'portion': 
+            return newList.sort((a, b) => a.size > b.size ? 1 : -1);
+          case 'qtt_people':
+            return newList.sort((a,b) => a.serving > b.serving ? 1 : -1);
+          case 'price':
+            return newList.sort((a,b) => a.price > b.price ? 1 : -1);
+          default:
+            return newList; 
+        }
+      }
+
     useEffect(() => {
         const newList = itens.filter(item => testSearch(item.title) && testFilter(item.category.id));
-        setList(newList);
-    }, [search, filter])
+        setList(order(newList));
+    }, [search, filter, orderBy])
 
     return (
         <div className={style.itens}>
