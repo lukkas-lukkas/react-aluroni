@@ -1,5 +1,5 @@
-import React from "react";
-import filters from "./filters.json";
+import React from 'react';
+import filters from './filters.json';
 import styles from './Filters.module.scss';
 
 interface IFilter {
@@ -31,5 +31,5 @@ export default function Filters({ activeFilter, setFilter }: Props) {
         </button>
       ))}
     </div>
-  )
+  );
 }
