@@ -10,6 +10,8 @@ export default function Menu() {
 
     const [filter, setFilter] = useState<number | null>(null);
 
+    const [orderby, setOrderBy] = useState('');
+
     return (
         <main>
             <nav className={style.container}>
@@ -25,7 +27,7 @@ export default function Menu() {
                 <Search search={search} setSearch={setSearch} />
                 <div className={style.menu__filters}>
                     <Filters activeFilter={filter} setFilter={setFilter}/>
-                    <OrderBy />
+                    <OrderBy orderBy={orderby} setOrderBy={setOrderBy}/>
                 </div>
             </section>
         </main>

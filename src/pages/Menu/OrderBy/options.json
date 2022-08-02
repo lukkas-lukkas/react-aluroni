@@ -1,18 +1,18 @@
 [
     {
-        "nome": "",
+        "name": "",
         "value": ""
     },
     {
-        "nome": "Portion",
+        "name": "Portion",
         "value": "portion"
     },
     {
-        "nome": "Qtt. people",
+        "name": "Qtt. people",
         "value": "qtt_people"
     },
     {
-        "nome": "Price",
+        "name": "Price",
         "value": "price"
     }
 ]
