@@ -13,7 +13,7 @@ export default function Itens({ search, filter, orderBy }: Props) {
     const [list, setList] = useState(itens);
 
     function testSearch(title: string) {
-        const regex = new RegExp(title, 'i');
+        const regex = new RegExp(search, 'i');
         return regex.test(title);
     }
 
@@ -38,6 +38,7 @@ export default function Itens({ search, filter, orderBy }: Props) {
     useEffect(() => {
         const newList = itens.filter(item => testSearch(item.title) && testFilter(item.category.id));
         setList(order(newList));
+        console.log('SEARCH', search);
     }, [search, filter, orderBy])
 
     return (
