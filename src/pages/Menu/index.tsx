@@ -19,7 +19,7 @@ export default function Menu() {
       <Header text='Great code and spaghetti'/>
       
       <section className={`${style.menu} ${theme.container}`}>
-        <h3 className={style.menu__title}>Menu</h3>
+        <h3 className={theme.pageTitle}>Menu</h3>
         <Search search={search} setSearch={setSearch} />
         <div className={style.menu__filters}>
           <Filters activeFilter={filter} setFilter={setFilter}/>

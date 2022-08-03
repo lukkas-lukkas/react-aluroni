@@ -1,12 +1,6 @@
 @import "styles/var";
 
 .menu {
-    &__title {
-        color: $dark;
-        font-size: 3rem;
-        margin-bottom: 30px;
-    }
-
     &__filters {
         align-items: center;
         display: flex;

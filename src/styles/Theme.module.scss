@@ -1,4 +1,5 @@
 @import "styles/breakpoints";
+@import "styles/var";
 
 .container {
     padding: 50px 250px;
@@ -19,3 +20,9 @@
         padding-right: 200px;
     }
 }
+
+.pageTitle {
+    color: $dark;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }

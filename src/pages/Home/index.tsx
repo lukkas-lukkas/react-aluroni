@@ -13,7 +13,7 @@ export default function Home() {
       <Header text='Welcome to Aluroni'/>
 
       <section className={theme.container}>
-        <h3 className={style.title}>Recommendations</h3>
+        <h3 className={theme.pageTitle}>Recommendations</h3>
         <div className={style.recommendeds}>
           {recommendations.map(recommendation => (
             <div key={recommendation.id} className={style.recommended}>
