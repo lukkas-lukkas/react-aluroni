@@ -9,7 +9,7 @@ export default function AppRouter() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cardapio" element={<Menu />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
     </BrowserRouter>
   );
