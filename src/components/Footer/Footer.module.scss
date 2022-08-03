@@ -1,0 +1,10 @@
+@import "styles/var";
+@import "styles/breakpoints";
+
+.footer {
+    background-color: $red;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
