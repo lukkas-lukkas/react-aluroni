@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './Itens.module.scss';
 import itens from './itens.json';
 import Item from './Item';

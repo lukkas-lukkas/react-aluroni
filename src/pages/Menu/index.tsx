@@ -1,5 +1,5 @@
 import { ReactComponent as Logo } from 'assets/logo.svg';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import style from './Menu.module.scss';
 import Search from './Search';
 import Filters from './Filters';
