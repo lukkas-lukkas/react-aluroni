@@ -1,4 +1,3 @@
-import { ReactComponent as Logo } from 'assets/logo.svg';
 import { useState } from 'react';
 import style from './Menu.module.scss';
 import Search from './Search';
@@ -6,6 +5,7 @@ import Filters from './Filters';
 import OrderBy from './OrderBy';
 import Itens from './Itens';
 import theme from 'styles/Theme.module.scss';
+import Header from 'components/Header';
 
 export default function Menu() {
   const [search, setSearch] = useState('');
@@ -16,14 +16,8 @@ export default function Menu() {
 
   return (
     <main>
-      <nav className={`${theme.container} ${style.nav}`}>
-        <Logo />
-      </nav>
-      <header className={style.header}>
-        <div className={`${style.header__text} ${theme.container}`}>
-                    Great code and spaghetti
-        </div>
-      </header>
+      <Header text='Great code and spaghetti'/>
+      
       <section className={`${style.menu} ${theme.container}`}>
         <h3 className={style.menu__title}>Menu</h3>
         <Search search={search} setSearch={setSearch} />

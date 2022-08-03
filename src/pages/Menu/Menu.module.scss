@@ -1,27 +1,7 @@
 @import "styles/var";
 
-.nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.header {
-    align-items: center;
-    background-image: url('/assets/menu/header.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 300px;
-
-    &__text {
-        color: white;
-        font-size: 5rem;
-        min-width: 400px;
-    }
-}
-
 .menu {
-    &__titulo {
+    &__title {
         color: $dark;
         font-size: 3rem;
         margin-bottom: 30px;
