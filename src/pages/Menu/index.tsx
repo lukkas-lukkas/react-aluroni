@@ -5,6 +5,7 @@ import Search from './Search';
 import Filters from './Filters';
 import OrderBy from './OrderBy';
 import Itens from './Itens';
+import theme from 'styles/Theme.module.scss';
 
 export default function Menu() {
   const [search, setSearch] = useState('');
@@ -15,15 +16,15 @@ export default function Menu() {
 
   return (
     <main>
-      <nav className={`${style.container} ${style.nav}`}>
+      <nav className={`${theme.container} ${style.nav}`}>
         <Logo />
       </nav>
       <header className={style.header}>
-        <div className={`${style.header__text} ${style.container}`}>
+        <div className={`${style.header__text} ${theme.container}`}>
                     Great code and spaghetti
         </div>
       </header>
-      <section className={`${style.menu} ${style.container}`}>
+      <section className={`${style.menu} ${theme.container}`}>
         <h3 className={style.menu__title}>Menu</h3>
         <Search search={search} setSearch={setSearch} />
         <div className={style.menu__filters}>

@@ -1,5 +1,6 @@
 import menuItens from 'data/menu-itens.json';
 import style from './Home.module.scss';
+import theme from 'styles/Theme.module.scss';
 
 export default function Home() {
   let recommendations = [...menuItens];
@@ -7,7 +8,7 @@ export default function Home() {
   recommendations = recommendations.sort(() => 0.5 - Math.random()).splice(0, 3);
 
   return (
-    <section>
+    <section className={theme.container}>
       <h3 className={style.title}>Recommendations</h3>
       <div className={style.recommendeds}>
         {recommendations.map(recommendation => (
