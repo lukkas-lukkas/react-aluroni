@@ -1,0 +1,14 @@
+.header {
+    align-items: center;
+    background-image: url('/assets/menu/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 300px;
+
+    &__text {
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+    }
+}

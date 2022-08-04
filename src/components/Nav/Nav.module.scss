@@ -1,0 +1,30 @@
+@import "styles/var";
+
+.nav {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    display: flex;
+
+    &__list {
+        align-items: center;
+        display: flex;
+    }
+
+    &__link {
+        list-style-type: none;
+        padding: 0 20px;
+
+        a {
+            color: $dark;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: .2s ease;
+
+            &:hover {
+                color: $dark-grey;
+            }
+        }
+    }
+}

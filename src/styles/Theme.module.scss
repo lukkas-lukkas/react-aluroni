@@ -1,0 +1,28 @@
+@import "styles/breakpoints";
+@import "styles/var";
+
+.container {
+    padding: 50px 250px;
+    width: 100%;
+
+    @media (max-width: $desktop_xsm) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+.pageTitle {
+    color: $dark;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
