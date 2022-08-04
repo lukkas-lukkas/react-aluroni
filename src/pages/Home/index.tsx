@@ -3,11 +3,18 @@ import style from './Home.module.scss';
 import theme from 'styles/Theme.module.scss';
 import Header from 'components/Header';
 import ourHome from 'assets/our_home.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   let recommendations = [...menuItens];
 
   recommendations = recommendations.sort(() => 0.5 - Math.random()).splice(0, 3);
+
+  function goToDish(dish: typeof menuItens[0]) {
+    navigate(`/dish/${dish.id}`, { state: { dish }, replace: true });
+  }
 
   return (
     <>
@@ -21,7 +28,12 @@ export default function Home() {
               <div className={style.recommended__image}>
                 <img src={recommendation.photo} alt={recommendation.title} />
               </div>
-              <button className={style.recommended__button}>See more</button>
+              <button 
+                className={style.recommended__button}
+                onClick={() => goToDish(recommendation)}
+              >
+                See more
+              </button>
             </div>
           ))}
         </div>
