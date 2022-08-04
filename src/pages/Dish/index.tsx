@@ -3,6 +3,7 @@ import style from './Dish.module.scss';
 import theme from 'styles/Theme.module.scss';
 import menuItens from 'data/menu-itens.json';
 import NotFound from 'pages/NotFound';
+import Header from 'components/Header';
 
 export default function Dish() {
   const navigate = useNavigate();
@@ -17,6 +18,8 @@ export default function Dish() {
 
   return (
     <>
+      <Header text='Dish details' />
+
       <div className={theme.container}>
         <button className={style.back} onClick={() => navigate(-1)}>
           {'< Back'}

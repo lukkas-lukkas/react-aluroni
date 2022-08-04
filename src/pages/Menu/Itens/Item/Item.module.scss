@@ -10,6 +10,15 @@ $vegans: #80aa40;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    transition: .2s ease-in;
+
+    &:hover {
+        background-color: $grey;
+    }
 
     &__image {
         min-width: 240px;
@@ -30,7 +39,7 @@ $vegans: #80aa40;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 20px;
+        margin: 0 20px;
 
         @media (max-width: $desktop_xsm) {
             flex-direction: row;

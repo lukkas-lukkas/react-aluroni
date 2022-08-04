@@ -1,13 +1,18 @@
 import style from './Item.module.scss';
 import itens from 'data/menu-itens.json';
+import { useNavigate } from 'react-router-dom';
 
 type Props = typeof itens[0];
 
 export default function Item(props: Props) {
-  const { title, description, category, size, serving, price, photo } = props;
+  const { title, description, category, size, serving, price, photo, id } = props;
+  const navigate = useNavigate();
 
   return (
-    <div className={style.item}>
+    <div 
+      className={style.item}
+      onClick={() => navigate(`/dish/${id}`)}
+    >
       <div className={style.item__image}>
         <img src={photo} alt={title} />
       </div>
