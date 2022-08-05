@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# React aluroni
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project developed to apply studies about React. Using:
+- React
+- React router
+- ESLint
+- Css modules
+- Sass
+
+<div style="display: flex;">
+    <img src="./public/home.png" width="50%">
+    <img src="./public/menu.png" width="50%">
+</div>
 
 ## Available Scripts
 
